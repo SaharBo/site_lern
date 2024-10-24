@@ -1,15 +1,40 @@
 body {
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
-h1 {font-size: 32pt;
+header h1{
+    font-size: 32pt;
     text-align: center;
+    
+    margin: 12pt;
+    border-style: solid;
+    border-color: #333;
+    border-radius: 15px;
+    
 }
 
+header h3 {
+    border-width: 5px;
+    text-align: center;
+    border-style: double;
+    border-style: solid;
+
+    border-color: #333;
+
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+   
+   
+   
+   
+}
 p { 
     font-size: 14pt;
     text-align: justify;
     }
+
 
 .pict {
     text-align: center;
@@ -23,14 +48,14 @@ p {
     border-style: solid;
 }
 
-ul.nav {
-    margin-left: 0px;
-    padding-left: 0px;
-    list-style: none;
+li {
+    display: inline-block;
+    margin: 0 10px;
 }
 
-ul.nav a {
-    display: block;
+nav a {
+
+    /*display: inline-block;*/
     width: 7em;
     padding: 10px;
     background-color: blueviolet;
@@ -43,4 +68,12 @@ ul.nav a {
 
 ul.nav li :last-child a {
     border-bottom: 1px dashed #333;
+}
+
+hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: rgb(91, 45, 218); /* Цвет линии для остальных браузеров */
+    background-color: red; /* Цвет линии для браузера Firefox и Opera */
+    height: 12px; /* Толщина линии */
+    
 }
